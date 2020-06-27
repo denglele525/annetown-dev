@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.annetown</groupId>
+    <artifactId>annetown-dev</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>annetown-dev-common</module>
+        <module>annetown-dev-pojo</module>
+        <module>annetown-dev-mapper</module>
+        <module>annetown-dev-api</module>
+        <module>annetown-dev-service</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+</project>
