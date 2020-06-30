@@ -7,11 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="annetown-dev-pojo" />
-        <module name="annetown-dev-service" />
+        <module name="annetown-dev-common" />
         <module name="annetown-dev-api" />
         <module name="annetown-dev-mapper" />
-        <module name="annetown-dev-common" />
+        <module name="annetown-dev-service" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="annetown-dev-api" options="-parameters" />
+      <module name="annetown-dev-common" options="-parameters" />
+      <module name="annetown-dev-mapper" options="-parameters" />
+      <module name="annetown-dev-pojo" options="-parameters" />
+      <module name="annetown-dev-service" options="-parameters" />
+    </option>
   </component>
 </project>
