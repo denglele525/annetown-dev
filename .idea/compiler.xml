@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="annetown-dev-pojo" />
-        <module name="annetown-dev-common" />
+        <module name="annetown-dev-service" />
         <module name="annetown-dev-api" />
         <module name="annetown-dev-mapper" />
-        <module name="annetown-dev-service" />
+        <module name="annetown-dev-common" />
       </profile>
     </annotationProcessing>
   </component>
