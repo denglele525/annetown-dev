@@ -1,4 +1,4 @@
-package com.annetown.service.serviceImpl;
+package com.annetown.service.impl;
 
 import com.annetown.enums.Sex;
 import com.annetown.mapper.ShopUserMapper;
