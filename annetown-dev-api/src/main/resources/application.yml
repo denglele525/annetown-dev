@@ -4,6 +4,8 @@ server:
     uri-encoding: UTF-8
   max-http-header-size: 80KB
 spring:
+  profiles:
+    active: dev
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -19,11 +21,13 @@ spring:
       pool-name: DataSourceHikariCP
       max-lifetime: 1800000
       connection-test-query: SELECT 1
+  servlet:
+    multipart:
+      max-file-size: 512000     # 文件上传大小限制为500kb
+      max-request-size: 512000  # 请求大小限制为500kb
 mybatis:
   type-aliases-package: com.annetown.pojo
   mapper-locations: classpath:mapper/*.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 mapper:
   mappers: com.annetown.my.mapper.MyMapper
